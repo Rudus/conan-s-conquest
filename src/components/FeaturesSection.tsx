@@ -1,31 +1,31 @@
-import featureCombat from "@/assets/feature-combat.gif";
-import featureWorld from "@/assets/feature-world.gif";
-import featureArmy from "@/assets/feature-army.gif";
-import featureRpg from "@/assets/feature-rpg.gif";
+import featureCombat from "@/assets/feature-combat.mp4";
+import featureWorld from "@/assets/feature-world.mp4";
+import featureArmy from "@/assets/feature-army.mp4";
+import featureRpg from "@/assets/feature-rpg.mp4";
 
 const FEATURES = [
   {
     title: "Turn-Based Tactical Combat",
     description: "Choose your engagements carefully, then face your foes in tactical, turn-based battles. Equip powerful Relics that can rewrite the rules of war.",
-    image: featureCombat,
+    video: featureCombat,
     alt: "Turn-based tactical combat on a fantasy battlefield",
   },
   {
     title: "Explore a Dying World",
     description: "Carve your path through an open world of crumbling civilizations. Trade between settlements, fight as a mercenary, or delve into mysterious dungeons.",
-    image: featureWorld,
+    video: featureWorld,
     alt: "Open world map with ancient ruins and settlements",
   },
   {
     title: "Build Your Army",
     description: "Recruit from four major factions — Lemurians, Thuleans, Hyperboreans, and Agarthans. Tame beasts, conjure Elementals, and command Thoughtforms.",
-    image: featureArmy,
+    video: featureArmy,
     alt: "Diverse fantasy army with warriors from different factions",
   },
   {
     title: "Deep RPG Character System",
     description: "Choose your tribe and background. Develop your character with active skills, passive perks, and otherworldly powers discovered across the wastes.",
-    image: featureRpg,
+    video: featureRpg,
     alt: "RPG character sheet with stats and skills",
   },
 ];
@@ -54,15 +54,16 @@ const FeaturesSection = () => {
               key={feature.title}
               className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} items-center gap-10 lg:gap-16`}
             >
-              {/* Image */}
+              {/* Video */}
               <div className="w-full lg:w-1/2 relative group">
                 <div className="overflow-hidden rounded-sm border border-border">
-                  <img
-                    src={feature.image}
-                    alt={feature.alt}
-                    loading="lazy"
-                    width={800}
-                    height={600}
+                  <video
+                    src={feature.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    aria-label={feature.alt}
                     className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
