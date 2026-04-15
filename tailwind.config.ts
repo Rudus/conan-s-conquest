@@ -13,7 +13,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ["Cinzel", "serif"],
+        body: ["Crimson Text", "serif"],
+      },
       colors: {
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+          dark: "hsl(var(--gold-dark))",
+        },
+        bronze: "hsl(var(--bronze))",
+        parchment: "hsl(var(--parchment))",
+        blood: "hsl(var(--blood))",
+        ember: "hsl(var(--ember))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
