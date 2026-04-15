@@ -32,14 +32,24 @@ const HeroSection = () => {
 
         <div className="animate-fade-in-up" style={{ animationDelay: "0.6s", opacity: 0 }}>
           <a
-            href={STEAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-heading text-lg font-semibold tracking-widest uppercase rounded-sm glow-gold transition-all duration-300 hover:scale-105 hover:brightness-110"
-          >
-            <SteamIcon />
-            Wishlist on Steam
-          </a>
+  href={STEAM_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    // @ts-ignore
+    if (window.gtag) {
+      // @ts-ignore
+      window.gtag('event', 'wishlist_click', {
+        'button_location': 'hero_section',
+        'destination': 'steam_store'
+      });
+    }
+  }}
+  className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-heading text-lg font-semibold tracking-widest uppercase rounded-sm glow-gold transition-all duration-300 hover:scale-105 hover:brightness-110"
+>
+  <SteamIcon />
+  Wishlist on Steam
+</a>
         </div>
 
         <p className="mt-4 text-sm text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.8s", opacity: 0 }}>
