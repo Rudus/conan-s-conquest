@@ -1,5 +1,5 @@
 import featureCombat from "@/assets/feature-combat.jpg";
-import featureWorld from "@/assets/feature-world.jpg";
+import featureWorld from "@/assets/feature-world.gif";
 import featureArmy from "@/assets/feature-army.jpg";
 import featureRpg from "@/assets/feature-rpg.jpg";
 
