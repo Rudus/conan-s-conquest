@@ -19,13 +19,23 @@ const CtaSection = () => {
         </p>
 
         <a
-          href={STEAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-primary-foreground font-heading text-xl font-semibold tracking-widest uppercase rounded-sm glow-gold transition-all duration-300 hover:scale-105 hover:brightness-110"
-        >
-          Wishlist on Steam
-        </a>
+  href={STEAM_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    // @ts-ignore
+    if (window.gtag) {
+      // @ts-ignore
+      window.gtag('event', 'wishlist_click', {
+        'button_location': 'cta_section',
+        'destination': 'steam_store'
+      });
+    }
+  }}
+  className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-primary-foreground font-heading text-xl font-semibold tracking-widest uppercase rounded-sm glow-gold transition-all duration-300 hover:scale-105 hover:brightness-110"
+>
+  Wishlist on Steam
+</a>
       </div>
 
       {/* Footer */}
