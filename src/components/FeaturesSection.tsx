@@ -1,7 +1,7 @@
 import featureCombat from "@/assets/feature-combat.gif";
 import featureWorld from "@/assets/feature-world.gif";
 import featureArmy from "@/assets/feature-army.gif";
-import featureRpg from "@/assets/feature-rpg.jpg";
+import featureRpg from "@/assets/feature-rpg.gif";
 
 const FEATURES = [
   {
