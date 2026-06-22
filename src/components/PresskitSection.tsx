@@ -133,7 +133,7 @@ const PresskitSection = () => {
                 contact us below.
               </p>
               <a
-                href={"https://drive.google.com/file/d/1yLmLE_og9_DBUy9Wf0H20CB62_JVTzYL/view?usp=sharing"}
+                href={"https://drive.google.com/drive/folders/1F0DaOjpDZxQRWkIB0Z9vAE2u4D--Hi2p?usp=sharing"}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-heading text-sm font-semibold tracking-widest uppercase rounded-sm glow-gold transition-all duration-300 hover:scale-105 hover:brightness-110"
               >
                 Press Kit Files
