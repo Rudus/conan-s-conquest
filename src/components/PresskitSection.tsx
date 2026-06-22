@@ -7,14 +7,26 @@ const FACTS = [
   { label: "Developer", value: "Terminal Zero" },
   { label: "Publisher", value: "Terminal Zero" },
   { label: "Release", value: "2026" },
-  { label: "Platforms", value: "PC (Steam)" },
+  { label: "Platforms", value: "PC (Steam, GOG)" },
   { label: "Genre", value: "Open World Strategy RPG" },
-  { label: "Engine", value: "Custom" },
+  { label: "Engine", value: "Unity" },
   { label: "Players", value: "Single-player" },
-  { label: "Website", value: "wardoffevil.com" },
+  {
+    label: "Steam Store",
+    value: (
+      <a
+        href="https://store.steampowered.com/app/3422000/Ward_Off_Evil/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gold hover:underline"
+      >
+        View page
+      </a>
+    ),
+  },
 ];
 
-const PRESS_EMAIL = "press@terminalzero.games";
+const PRESS_EMAIL = "terminal.zero.games@proton.me";
 
 const PresskitSection = () => {
   return (
