@@ -27,8 +27,8 @@ const HeroSection = () => {
         <p className="font-body text-xl md:text-2xl text-foreground/80 mb-4 animate-fade-in-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
           An Open World Strategy RPG
         </p>
-        <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.4s", opacity: 0 }}>
-          Create your character, rally an army, and roam the wastes as you battle to avert — or bring about — the end of the Cycle.
+        <p className="font-body text-base md:text-lg text-muted-foreground max-w-3xl mx-auto mb-10 animate-fade-in-up leading-relaxed" style={{ animationDelay: "0.4s", opacity: 0 }}>
+          The world is already dead; you are just here to scavenge what's left. Lead a mercenary warband through a grueling, low-fantasy wasteland where ancient civilizations lie buried under cursed sands. There are no heroes here, no chosen ones saving the realm—only nameless wanderers, unpaid contracts, and a desperate struggle to keep your crew fed and alive. Will you build a legendary company, or become just another pile of bones in the desert?
         </p>
 
         <div className="animate-fade-in-up" style={{ animationDelay: "0.6s", opacity: 0 }}>
