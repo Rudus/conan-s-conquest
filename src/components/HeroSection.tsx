@@ -1,4 +1,5 @@
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBgAsset from "@/assets/hero-bg-new.png.asset.json";
+const heroBg = heroBgAsset.url;
 
 const STEAM_URL = "https://store.steampowered.com/app/3422000?utm_source=LandingPage";
 
