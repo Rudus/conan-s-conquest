@@ -1,4 +1,5 @@
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBgAsset from "@/assets/hero-bg-new.png.asset.json";
+const heroBg = heroBgAsset.url;
 import featureCombat from "@/assets/feature-combat.mp4";
 import featureWorld from "@/assets/feature-world.mp4";
 import featureArmy from "@/assets/feature-army.mp4";
