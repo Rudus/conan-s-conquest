@@ -79,14 +79,10 @@ const PresskitSection = () => {
                 About the Game
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-3">
-                <span className="text-foreground font-semibold">Ward Off Evil</span> is an
-                open world strategy RPG set in a dying age of sword and sorcery. Create
-                your character, recruit an army from four ancient factions, and roam the
-                wastes as you battle to avert — or bring about — the end of the Cycle.
+                <span className="text-foreground font-semibold">Ward Off Evil</span> is a dark, tactical RPG where you lead a mercenary warband across a grueling, post-apocalyptic wasteland. Every turn, food ration, and paid wage dictates your survival, while dark mysteries are uncovered through classic, text-based lore.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Featuring deep turn-based tactical combat, a reactive open world, and a
-                rich character system with otherworldly powers.
+                Hardcore Tactical Combat: Face your foes in unforgiving, grid-based battles. Master the strengths and weaknesess of units, time your attack and defence, and utilize different skills to survive.
               </p>
             </div>
 
