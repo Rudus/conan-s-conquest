@@ -82,7 +82,16 @@ const PresskitSection = () => {
                 <span className="text-foreground font-semibold">Ward Off Evil</span> is a dark, tactical RPG where you lead a mercenary warband across a grueling, post-apocalyptic wasteland. Every turn, food ration, and paid wage dictates your survival, while dark mysteries are uncovered through classic, text-based lore.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Hardcore Tactical Combat: Face your foes in unforgiving, grid-based battles. Master the strengths and weaknesess of units, time your attack and defence, and utilize different skills to survive.
+                <span className="text-foreground font-semibold">Hardcore Tactical Combat:</span> Face your foes in unforgiving, grid-based battles. Master the strengths and weaknesess of units, time your attack and defence, and utilize different skills to survive.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                <span className="text-foreground font-semibold">Warband Management:</span> Mercenaries don't fight for free. You must secure coin to pay their wages and scavenge enough food to keep them marching. Every step on the world map consumes precious supplies.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                <span className="text-foreground font-semibold">Low-Fantasy Lore:</span> Explore a desolate world heavily inspired by classic pulp fiction and ancient mythology. Recruit from deeply flawed factions — scavengers, hoarders, mad mages, no prophesied heroes.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                <span className="text-foreground font-semibold">Deep, Text-Based Encounters:</span> Experience classic, text-driven storytelling where no choice is universally good or bad. Your actions will dynamically shift your standing with factions and shape the event around you.
               </p>
             </div>
 
