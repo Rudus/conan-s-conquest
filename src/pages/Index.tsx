@@ -23,6 +23,7 @@ const Index = () => {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => {
+            trackClick('wishlist_pre_presskit');
             // @ts-ignore
             if (window.gtag) {
               // @ts-ignore
