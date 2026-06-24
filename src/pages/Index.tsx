@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import PresskitSection from "@/components/PresskitSection";
 import CtaSection from "@/components/CtaSection";
+import { trackClick } from "@/lib/trackClick";
 
 const STEAM_URL = "https://store.steampowered.com/app/3422000?utm_source=LandingPage";
 
@@ -22,6 +23,7 @@ const Index = () => {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => {
+            trackClick('wishlist_pre_presskit');
             // @ts-ignore
             if (window.gtag) {
               // @ts-ignore

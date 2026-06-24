@@ -1,4 +1,5 @@
 import heroBgAsset from "@/assets/hero-bg-new.png.asset.json";
+import { trackClick } from "@/lib/trackClick";
 const heroBg = heroBgAsset.url;
 import featureCombat from "@/assets/feature-combat.mp4";
 import featureWorld from "@/assets/feature-world.mp4";
@@ -19,6 +20,7 @@ const FACTS = [
         href="https://store.steampowered.com/app/3422000/Ward_Off_Evil/"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackClick('presskit_steam_store')}
         className="text-gold hover:underline"
       >
         View page
@@ -105,16 +107,22 @@ const PresskitSection = () => {
                   href={heroBg}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackClick('screenshot_hero')}
                   className="block overflow-hidden rounded-sm border border-border hover:border-gold/60 transition-colors"
                 >
                   <img src={heroBg} alt="Hero key art" className="w-full h-24 object-cover" />
                 </a>
-                {[featureCombat, featureWorld, featureArmy].map((src, i) => (
+                {[
+                  { src: featureCombat, id: 'screenshot_combat' },
+                  { src: featureWorld, id: 'screenshot_world' },
+                  { src: featureArmy, id: 'screenshot_army' },
+                ].map(({ src, id }) => (
                   <a
-                    key={i}
+                    key={id}
                     href={src}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackClick(id)}
                     className="block overflow-hidden rounded-sm border border-border hover:border-gold/60 transition-colors"
                   >
                     <video
@@ -134,6 +142,9 @@ const PresskitSection = () => {
               </p>
               <a
                 href={"https://drive.google.com/drive/folders/1F0DaOjpDZxQRWkIB0Z9vAE2u4D--Hi2p?usp=sharing"}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackClick('presskit_files')}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-heading text-sm font-semibold tracking-widest uppercase rounded-sm glow-gold transition-all duration-300 hover:scale-105 hover:brightness-110"
               >
                 Press Kit Files
@@ -150,6 +161,7 @@ const PresskitSection = () => {
               </p>
               <a
                 href={`mailto:${PRESS_EMAIL}?subject=Ward Off Evil — Press Inquiry`}
+                onClick={() => trackClick('press_contact_email')}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-heading text-sm font-semibold tracking-widest uppercase rounded-sm glow-gold transition-all duration-300 hover:scale-105 hover:brightness-110"
               >
                 {PRESS_EMAIL}
