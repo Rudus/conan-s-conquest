@@ -20,6 +20,7 @@ const FACTS = [
         href="https://store.steampowered.com/app/3422000/Ward_Off_Evil/"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackClick('presskit_steam_store')}
         className="text-gold hover:underline"
       >
         View page
