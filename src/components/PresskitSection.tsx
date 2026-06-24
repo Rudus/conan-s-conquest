@@ -1,4 +1,5 @@
 import heroBgAsset from "@/assets/hero-bg-new.png.asset.json";
+import { trackClick } from "@/lib/trackClick";
 const heroBg = heroBgAsset.url;
 import featureCombat from "@/assets/feature-combat.mp4";
 import featureWorld from "@/assets/feature-world.mp4";
