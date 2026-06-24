@@ -1,4 +1,5 @@
 import heroBgAsset from "@/assets/hero-bg-new.png.asset.json";
+import { trackClick } from "@/lib/trackClick";
 const heroBg = heroBgAsset.url;
 
 const STEAM_URL = "https://store.steampowered.com/app/3422000?utm_source=LandingPage";
