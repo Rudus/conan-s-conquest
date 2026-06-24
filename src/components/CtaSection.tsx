@@ -25,6 +25,7 @@ const CtaSection = () => {
   target="_blank"
   rel="noopener noreferrer"
   onClick={() => {
+    trackClick('wishlist_cta');
     // @ts-ignore
     if (window.gtag) {
       // @ts-ignore
