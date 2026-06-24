@@ -38,6 +38,7 @@ const HeroSection = () => {
   target="_blank"
   rel="noopener noreferrer"
   onClick={() => {
+    trackClick('wishlist_hero');
     // @ts-ignore
     if (window.gtag) {
       // @ts-ignore
