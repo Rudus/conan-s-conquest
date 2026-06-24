@@ -107,16 +107,22 @@ const PresskitSection = () => {
                   href={heroBg}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackClick('screenshot_hero')}
                   className="block overflow-hidden rounded-sm border border-border hover:border-gold/60 transition-colors"
                 >
                   <img src={heroBg} alt="Hero key art" className="w-full h-24 object-cover" />
                 </a>
-                {[featureCombat, featureWorld, featureArmy].map((src, i) => (
+                {[
+                  { src: featureCombat, id: 'screenshot_combat' },
+                  { src: featureWorld, id: 'screenshot_world' },
+                  { src: featureArmy, id: 'screenshot_army' },
+                ].map(({ src, id }) => (
                   <a
-                    key={i}
+                    key={id}
                     href={src}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackClick(id)}
                     className="block overflow-hidden rounded-sm border border-border hover:border-gold/60 transition-colors"
                   >
                     <video
