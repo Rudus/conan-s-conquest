@@ -161,6 +161,7 @@ const PresskitSection = () => {
               </p>
               <a
                 href={`mailto:${PRESS_EMAIL}?subject=Ward Off Evil — Press Inquiry`}
+                onClick={() => trackClick('press_contact_email')}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-heading text-sm font-semibold tracking-widest uppercase rounded-sm glow-gold transition-all duration-300 hover:scale-105 hover:brightness-110"
               >
                 {PRESS_EMAIL}
