@@ -1,3 +1,5 @@
+import { trackClick } from "@/lib/trackClick";
+
 const STEAM_URL = "https://store.steampowered.com/app/3422000?utm_source=LandingPage";
 
 const CtaSection = () => {
